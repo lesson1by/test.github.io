@@ -1,0 +1,208 @@
+/* Стили перенесены из вашего оригинального кода, адаптированы для нового меню */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+.logo-wrap img {
+    height: 50px; /* Подгоните под размер вашего изображения мужчины */
+    margin-right: 15px; /* Отступ между логотипом и текстом */
+}
+.logo-text {
+    font-family: 'Oswald', sans-serif; /* Красивый шрифт, можно заменить */
+    font-size: 1.8rem; /* Размер текста, подгоните по вкусу */
+    font-weight: 700; /* Жирность для стиля */
+    color: #ffffff; /* Белый цвет */
+    letter-spacing: 2px; /* Дополнительный стиль для красоты */
+}
+
+.header-info {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+}
+.header-phone-number a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+.header-phone-number a i {
+    margin-right: 5px;
+}
+
+.main-banner {
+    background: url('https://img.goodfon.com/original/2560x1440/0/5c/miaso-shashlyk-mangal-ovoshchi.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff; /* Белый цвет */
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.main-banner-slogo {
+    font-size: 3rem;
+    font-weight: 700; /* Максимальная жирность для Oswald */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Тень: смещение по X, Y, размытие, цвет */
+    -webkit-text-stroke: 1px #000000; /* Обводка текста для большей "жирности" */
+}
+
+.delivery-info {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень поменьше для читаемости */
+    -webkit-text-stroke: 0.5px #000000; /* Тонкая обводка */
+}
+
+.main-banner-phone a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Тень для номеров */
+    -webkit-text-stroke: 0.5px #000000; /* Тонкая обводка */
+}
+
+.main-banner-phone a i {
+    margin-right: 5px;
+}
+
+.menu {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-item {
+    width: 300px;
+    margin: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 10px;
+}
+
+.menu-name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.menu-topping {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-digits {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.menu-price {
+    color: #e74c3c;
+}
+
+.oswald-regular {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.oswald-medium {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-destination {
+    font-size: 1.3rem;
+    line-height: 1.8; /* Увеличиваем межстрочный интервал */
+    font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-info {
+        font-size: 1rem;
+    }
+    .header-phone-number a {
+        font-size: 1rem;
+        display: block;
+        margin: 5px 0;
+    }
+    .main-banner-slogo {
+        font-size: 2.2rem;
+        -webkit-text-stroke: 0.8px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .delivery-info {
+        font-size: 1.2rem;
+        -webkit-text-stroke: 0.3px #000000;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .main-banner-phone a {
+        font-size: 1.4rem;
+        -webkit-text-stroke: 0.3px #000000;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    .menu-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .footer-destination {
+        font-size: 1.1rem; /* Уменьшаем для мобильных */
+    }
+}
