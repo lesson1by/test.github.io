@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container {
+    background-color: #000000;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-right: 15px;
+}
+
+.logo-wrap img {
+    max-width: 60px;
+    height: auto;
+}
+
+.header-center {
+    flex: 1;
+    text-align: center;
+}
+
+.header-info {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-phone-number a {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-phone-number a i {
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.header-phone-number a:hover {
+    color: #cccccc;
+}
+
+.main-banner {
+    background: url('https://img.goodfon.com/original/2560x1440/0/5c/miaso-shashlyk-mangal-ovoshchi.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    margin-top: 90px;
+}
+
+.main-banner-slogo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 1px #000000;
+}
+
+.delivery-info {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.main-banner-phone a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.main-banner-phone a i {
+    margin-right: 5px;
+}
+
+.arrow-down {
+    display: block;
+    margin: 20px auto;
+    font-size: 5em;
+    color: #ffffff;
+}
+
+.menu {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-item {
+    width: 300px;
+    margin: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-info {
+    padding: 10px;
+}
+
+.menu-name {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.menu-topping {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-digits {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.menu-price {
+    color: #e74c3c;
+}
+
+.oswald-regular {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.oswald-medium {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-destination {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; /* Увеличиваем внутренний отступ для "воздуха" */
+    }
+
+    .header-left, .header-center, .header-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px; /* Увеличиваем отступ между блоками */
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        font-size: 2rem; /* Увеличиваем размер текста для читаемости */
+        margin-right: 0;
+        margin-bottom: 8px; /* Увеличиваем отступ между названием и логотипом */
+    }
+
+    .logo-wrap img {
+        max-width: 50px; /* Размер логотипа остаётся компактным */
+    }
+
+    .header-info {
+        font-size: 1.3rem; /* Увеличиваем размер текста для читаемости */
+    }
+
+    .header-phone-number a {
+        font-size: 1.2rem; /* Увеличиваем размер текста для читаемости */
+        margin: 5px 0; /* Увеличиваем отступ между номерами */
+        justify-content: center; /* Центрируем номера */
+    }
+
+    .main-banner {
+        margin-top: 180px; /* Увеличиваем отступ, чтобы учесть новую высоту хедера */
+        padding: 30px 10px;
+    }
+
+    .main-banner-slogo {
+        font-size: 2.2rem;
+        -webkit-text-stroke: 0.8px #000000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .delivery-info {
+        font-size: 1.2rem;
+        -webkit-text-stroke: 0.3px #000000;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .main-banner-phone a {
+        font-size: 1.4rem;
+        -webkit-text-stroke: 0.3px #000000;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    .arrow-down {
+        font-size: 3em;
+    }
+
+    .menu-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-destination {
+        font-size: 1.1rem;
+    }
+}
