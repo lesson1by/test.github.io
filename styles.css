@@ -204,13 +204,13 @@ footer {
     .header {
         flex-direction: column;
         align-items: center;
-        padding: 15px; /* Увеличиваем внутренний отступ для "воздуха" */
+        padding: 10px; /* Увеличиваем внутренний отступ для "воздуха" */
     }
 
     .header-left, .header-center, .header-right {
         width: 100%;
         text-align: center;
-        margin-bottom: 10px; /* Увеличиваем отступ между блоками */
+        margin-bottom: 8px; /* Увеличиваем отступ между блоками */
     }
 
     .header-left {
@@ -220,27 +220,27 @@ footer {
     }
 
     .header-title {
-        font-size: 2rem; /* Увеличиваем размер текста для читаемости */
+        font-size: 1.8rem; /* Увеличиваем размер текста для читаемости */
         margin-right: 0;
         margin-bottom: 8px; /* Увеличиваем отступ между названием и логотипом */
     }
 
     .logo-wrap img {
-        max-width: 40px; /* Размер логотипа остаётся компактным */
+        max-width: 50px; /* Размер логотипа остаётся компактным */
     }
 
     .header-info {
-        font-size: 1.3rem; /* Увеличиваем размер текста для читаемости */
+        font-size: 1.1rem; /* Увеличиваем размер текста для читаемости */
     }
 
     .header-phone-number a {
-        font-size: 1.2rem; /* Увеличиваем размер текста для читаемости */
+        font-size: 1rem; /* Увеличиваем размер текста для читаемости */
         margin: 5px 0; /* Увеличиваем отступ между номерами */
         justify-content: center; /* Центрируем номера */
     }
 
     .main-banner {
-        margin-top: 180px; /* Увеличиваем отступ, чтобы учесть новую высоту хедера */
+        margin-top: 150px; /* Увеличиваем отступ, чтобы учесть новую высоту хедера */
         padding: 30px 10px;
     }
 
