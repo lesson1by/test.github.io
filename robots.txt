@@ -1,0 +1,5 @@
+User-agent: Yandex
+Allow: /
+User-agent: *
+Allow: /
+Sitemap: https://donerkebab63.ru/sitemap.xml
